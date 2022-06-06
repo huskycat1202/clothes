@@ -122,12 +122,12 @@ padding-top: 30px;
 width: 12%;
 }
 .temp {
-height: 90%;
-width: 90%;
+height: 679px;
+width: 59px;
 background-image: url(img/temp.png);
 background-repeat: no-repeat;
 background-size: contain;
-margin: 10% 0 0 10%;
+margin: 0 0 0 0;
 }
 .aside .sidetitle {
 font-size: 18px;
