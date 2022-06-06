@@ -291,9 +291,9 @@ a {
   text-align: center;
 }
 .recommendtext a {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
   color: var(--font--color);
 }
 #clothes1, #clothes2, #clothes3, #clothes4, #clothes5, #clothes6 {
