@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clothes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f66e350821.js" crossorigin="anonymous"></script>
+    <script src="./loction_search.js"></script>
+    <script src="./image_search.js"></script>
+    <script src="weather.js"></script>
+<!--    <script type="text/javascript" src="clothes.json"></script>-->
+    <title>Clothes</title>
+</head>
+<body>
+    <header class="header">
+        <div class='logo'>
+            <i class="fas fa-tshirt"></i>
+            <span>ºClothes</span>
+        </div>
+        <div class='icons'>
+            <label for="location">지역 검색:</label>
+            <div class="search">
+                <input type="text" id="location" placeholder="지역을 입력해주세요.">
+                <button id="searchBtn" onclick="search()">
+                    <i class="fas fa-search-location"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <aside class="aside">
+            <div class="sidetitle">기온별 보기</div>
+            <div class="temp">
+                <ul class="sidbar_pos">
+                    <li onclick="location.href='aside_1.html'" class="red sidbar"><p class="red_box arrow_box">28ºC~</p></li>
+                    <li onclick="location.href='aside_2.html'" class="orange sidbar"><p class="orange_box arrow_box">23ºC~27ºC</p></li>
+                    <li onclick="location.href='aside_3.html'" class="yellow sidbar"><p class="yellow_box arrow_box">20ºC~22ºC</p></li>
+                    <li onclick="location.href='aside_4.html'" class="lightgreen sidbar"><p class="lightgreen_box arrow_box">17ºC~19ºC</p></li>
+                    <li onclick="location.href='aside_5.html'" class="green sidbar"><p class="green_box arrow_box">12ºC~16ºC</p></li>
+                    <li onclick="location.href='aside_6.html'" class="lightblue sidbar"><p class="lightblue_box arrow_box">9ºC~11ºC</p></li>
+                    <li onclick="location.href='aside_7.html'" class="blue sidbar"><p class="blue_box arrow_box">5ºC~8ºC</p></li>
+                    <li onclick="location.href='aside_8.html'" class="purple sidbar"><p class="purple_box arrow_box">~4ºC</p></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="content">
+            <div class="weather">
+                <div class="current">
+                    <div id="cIcon"></div>
+                    <div class="weatherInfo">
+                        <div id="cTime"></div>
+                        <div class="weatherInfoTitle">
+                            <div id="cTemp"></div>
+                            <div class="temperature">
+                                <div id="minTemp"></div>
+                                <div id="maxTemp"></div>
+                                <div id="cFeel"></div>
+                                <div id="cPop"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hourly">
+                    <div id="hour0">
+                        <p id="0-time" style="font-size: 20px;"></p>
+                        <div id="h0-icon"></div>
+                        <p id="0-temp"></p>
+                    </div>
+                    <div id="hour1">
+                        <p id="1-time" style="font-size: 20px;"></p>
+                        <div id="h1-icon"></div>
+                        <p id="1-temp"></p>
+                    </div>
+                    <div id="hour2">
+                        <p id="2-time" style="font-size: 20px;"></p>
+                        <div id="h2-icon"></div>
+                        <p id="2-temp"></p>
+                    </div>
+                    <div id="hour3">
+                        <p id="3-time" style="font-size: 20px;"></p>
+                        <div id="h3-icon"></div>
+                        <p id="3-temp"></p>
+                    </div>
+                    <div id="hour4">
+                        <p id="4-time" style="font-size: 20px;"></p>
+                        <div id="h4-icon"></div>
+                        <p id="4-temp"></p>
+                    </div>
+                    <div id="hour5">
+                        <p id="5-time" style="font-size: 20px;"></p>
+                        <div id="h5-icon"></div>
+                        <p id="5-temp"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="recommend">
+                <div class="title">Outer</div>
+                    <div class='recommendImage'>
+                        <a href="#"><img id="clothes1" src="" alt="코트-이미지"></a>
+                        <a href="#"><img id="clothes2" src="" alt="가죽자켓-이미지"></a>
+                        <a href="#"><img id="clothes3" src="" alt="야상-이미지"></a>
+                    </div>
+                <div class='title'>Top</div>
+                    <div class='recommendImage'>
+                        <a href="#"><img id="clothes4" src="" alt="기모맨투맨-이미지"></a>
+                        <a href="#"><img id="clothes5" src="" alt="니트-이미지"></a>
+                        <a href="#"><img id="clothes6" src="" alt="기모후드티-이미지"></a>
+                    </div>
+                <div class="title">Bottom</div>
+                    <div class='recommendImage'>
+                        <a href="#"><img id="clothes7" src="" alt="청바지-이미지"></a>
+                        <a href="#"><img id="clothes8" src="" alt="슬랙스-이미지"></a>
+                        <a href="#"><img id="clothes9" src="" alt="트레이닝바지-이미지"></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="gitAddress">
+            <span class='title'>GitAddress</span>
+            <div class="personalGitAddress">
+                 <a href="https://github.com/JwaSangHeon">좌상헌 : https://github.com/JwaSangHeon</a>
+            </div>
+            <div class="personalGitAddress">
+                <a href="https://github.com/kkimhaji">하지현 : https://github.com/kkimhaji</a>
+            </div>
+            <div class="personalGitAddress">
+                <a href="https://github.com/noion0511">오희주 : https://github.com/noion0511</a>
+            </div>
+            <div class="personalGitAddress">
+                <a href="https://github.com/lottt105">최효빈 : https://github.com/lottt105</a>
+            </div>
+            <div class="personalGitAddress">
+                <a href='https://github.com/nayeon0731'>김나연 : https://github.com/nayeon0731</a>
+            </div>
+            <div class="personalGitAddress">
+                <a href='https://github.com/cmkyduck'>정희연 : https://github.com/cmkyduck</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
