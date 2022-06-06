@@ -46,7 +46,7 @@ const app = {
         document.getElementById('cPop').innerHTML = `강수: ${resp.daily[0].pop}%`;
         //시간별 온도
         var i;
-        for (i=0;i<=5;i++){
+        for (i=0;i<=4;i++){
             document.getElementById(`${i}-time`).innerHTML = `${app.getHour(resp.hourly[i].dt)}`;
             document.getElementById(`h${i}-icon`).innerHTML = `<img src='http://openweathermap.org/img/wn/${resp.hourly[i].weather[0].icon}.png' alt="icon">`;
             document.getElementById(`${i}-temp`).innerHTML = `${Math.floor(resp.hourly[i].temp)}º`;
