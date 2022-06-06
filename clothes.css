@@ -216,7 +216,7 @@ flex-grow: 1;
 margin-left: 5%;
 }
 #cTime {
-font-size: var(--large);
+font-size: var(--medium);
 font-weight: bold;
 }
 .weatherInfoTitle {
@@ -225,7 +225,7 @@ flex-direction: row;
 align-items: center;
 }
 #cTemp {
-font-size: 250%;
+font-size: 150%;
 }
 .temperature {
 font-size: 16px;
