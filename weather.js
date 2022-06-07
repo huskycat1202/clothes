@@ -41,7 +41,7 @@ const app = {
         setClothesImage(Math.floor(resp.current.temp))
         document.getElementById('minTemp').innerHTML = `최저: ${Math.floor(resp.daily[0].temp.min)}º`;
         document.getElementById('maxTemp').innerHTML = `최고: ${Math.floor(resp.daily[0].temp.max)}º`;
-        document.getElementById('cIcon').innerHTML = `<img src='http://openweathermap.org/img/wn/${resp.current.weather[0].icon}@4x.png'>`;
+        document.getElementById('cIcon').innerHTML = `<img src='http://openweathermap.org/img/wn/${resp.current.weather[0].icon}.png'>`;
         document.getElementById('cFeel').innerHTML = `체감: ${Math.floor(resp.current.feels_like)}º`;
         document.getElementById('cPop').innerHTML = `강수: ${resp.daily[0].pop}%`;
         //시간별 온도
