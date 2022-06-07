@@ -269,7 +269,6 @@ a {
 .recommendImage a {
   height: 50px;
   width: 50px;
-  border: 1px solid black;
 }
 .contentbox {
   border-radius: 10px;
