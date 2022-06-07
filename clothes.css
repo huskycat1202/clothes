@@ -140,7 +140,7 @@ border-radius: 32px;
 text-align: center;
 }
 .aside ul li {
-    height: 45px;
+    height: 43px;
     border-radius: 32px;
 }
 .sidbar_pos {
@@ -148,7 +148,7 @@ padding: 0 0 0 16px;
 }
 .sidbar {
 list-style-type: none;
-margin: 5px 0 1px 0;
+margin: 5px 0px 7px -2px;
 padding: 0;
 width: 12px;
 height: 5px;
