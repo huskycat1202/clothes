@@ -206,6 +206,8 @@ align-items: center;
 }
 #cIcon {
 flex-grow: 1;
+width: 100px;
+height: 100px;
 }
 #cIcon img {
 float: right;
