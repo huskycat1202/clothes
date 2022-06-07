@@ -57,8 +57,7 @@ font-size: 30px;
 font-size: 40px;
 }
 .icons {
-display: flex;
-align-items: center;
+margin: auto;
 }
 .icons label {
 font-size: 18px;
