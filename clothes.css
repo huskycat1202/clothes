@@ -211,7 +211,7 @@ height: 30px;
 }
 #cIcon img {
 float: right;
-width: 150px;
+width: 70px;
 }
 .weatherInfo {
 flex-grow: 1;
@@ -221,6 +221,7 @@ margin-left: 5%;
 font-size: var(--small);
 }
 .weatherInfoTitle {
+justify-content: space-evenly;
 display: flex;
 flex-direction: row;
 align-items: center;
