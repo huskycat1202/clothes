@@ -41,14 +41,14 @@ const app = {
         setClothesImage(Math.floor(resp.current.temp))
         document.getElementById('minTemp').innerHTML = `최저: ${Math.floor(resp.daily[0].temp.min)}º`;
         document.getElementById('maxTemp').innerHTML = `최고: ${Math.floor(resp.daily[0].temp.max)}º`;
-        document.getElementById('cIcon').innerHTML = `<img src='http://openweathermap.org/img/wn/${resp.current.weather[0].icon}@4x.png' alt="icon">`;
+        document.getElementById('cIcon').innerHTML = `<img src='http://openweathermap.org/img/wn/${resp.current.weather[0].icon}@4x.png'>`;
         document.getElementById('cFeel').innerHTML = `체감: ${Math.floor(resp.current.feels_like)}º`;
         document.getElementById('cPop').innerHTML = `강수: ${resp.daily[0].pop}%`;
         //시간별 온도
         var i;
         for (i=0;i<=4;i++){
             document.getElementById(`${i}-time`).innerHTML = `${app.getHour(resp.hourly[i].dt)}`;
-            document.getElementById(`h${i}-icon`).innerHTML = `<img src='http://openweathermap.org/img/wn/${resp.hourly[i].weather[0].icon}.png' alt="icon">`;
+            document.getElementById(`h${i}-icon`).innerHTML = `<img src='http://openweathermap.org/img/wn/${resp.hourly[i].weather[0].icon}.png'>`;
             document.getElementById(`${i}-temp`).innerHTML = `${Math.floor(resp.hourly[i].temp)}º`;
         }
     },
