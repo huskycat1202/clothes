@@ -87,8 +87,10 @@ font-size: 20px;
 }
 /*main css(aside)*/
 .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 height: 730px;
-display: flex;
 }
 .red {
 background-color: var(--red--color);
@@ -194,12 +196,11 @@ display: block;
 
 /* main css(content)*/
 .content {
-width: 80%;
+width: 100%;
 }
 .weather {
 display: flex;
 flex-direction: column;
-align-items: stretch;
 }
 .current {
 flex-grow: 1;
@@ -207,39 +208,42 @@ display: flex;
 align-items: center;
 }
 #cIcon {
-width: 30px;
-height: 30px;
+width: 120px;
+height: 120px;
+display: flex;
 }
 #cIcon img {
-float: right;
-width: 70px;
+float: middle;
+width: 120px;
 }
 .weatherInfo {
 flex-grow: 1;
-margin-left: 5%;
-}
-#cTime {
-font-size: var(--small);
-}
-.weatherInfoTitle {
-justify-content: space-evenly;
-display: flex;
-flex-direction: row;
 align-items: center;
 }
+#cTime {
+font-size: var(--medium);
+text-align: center;
+}
+.weatherInfoTitle {
+justify-content: space-between;
+display: flex;
+flex-direction: row;
+text-align: center;
+}
 #cTemp {
-font-size: 20;
-font-weight: bold;
+    text-align: right;
+    font-size: 50px;
+    font-weight: bold;
 }
 .temperature {
-font-size: 16px;
+justify-content: space-evenly;
+font-size: var(--medium);
 text-align: right;
 }
 .hourly {
-width: 20%;
+width: 100%;
 flex-grow: 1;
 display: flex;
-flex-grow: 1;
 }
 .hourly div {
 flex-grow: 1;
