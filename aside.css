@@ -204,7 +204,7 @@ a {
 
 /* main css(content)*/
 .content {
-  width: 95%;
+  width: 350px;
 }
 .weather {
   display: flex;
