@@ -206,8 +206,8 @@ align-items: center;
 }
 #cIcon {
 flex-grow: 1;
-width: 100px;
-height: 100px;
+width: 50px;
+height: 50px;
 }
 #cIcon img {
 float: right;
@@ -218,8 +218,7 @@ flex-grow: 1;
 margin-left: 5%;
 }
 #cTime {
-font-size: var(--medium);
-font-weight: bold;
+font-size: var(--small);
 }
 .weatherInfoTitle {
 display: flex;
@@ -227,7 +226,8 @@ flex-direction: row;
 align-items: center;
 }
 #cTemp {
-font-size: 150%;
+font-size: 20;
+font-weight: bold;
 }
 .temperature {
 font-size: 16px;
